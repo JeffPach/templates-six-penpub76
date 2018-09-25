@@ -10,10 +10,103 @@
     </div>
 </section>
 
+<section id="bottom-contact-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-7 col-lg-8">
+                <div class="bcb-text">
+                    We seek to create strong partnerships built on trust and results.
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-5 col-lg-4">
+                <a href="https://www.penpublishing.com/Contact/">
+                    <div class="btn btn-default">
+                        Let's Get Started. Contact Us Today
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="big-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 quicklinks">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>
+                        <a href="/">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/cart.php">
+                            Store
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/index.php?rp=/announcements">
+                            Announcements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/knowledgebase">
+                            Knowledgebase
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/serverstatus.php">
+                            Network Status
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/contact.php">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section id="footer">
     <div class="container">
-        <a href="#" class="back-to-top"><i class="fas fa-chevron-up"></i></a>
-        <p>Copyright &copy; {$date_year} {$companyname}. All Rights Reserved.</p>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <p>Copyright &copy; {$date_year} {$companyname}. All Rights Reserved.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <ul>
+                    <li>
+                        <a href="https://www.penpublishing.com/AboutPen/PrivacyStatement/">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.penpublishing.com/AboutPen/Legal/">
+                            Legal Terms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/knowledgebase">
+                            FAQs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/knowledgebase">
+                            Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="back-to-top">
+                            <i class="fas fa-chevron-up"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -46,6 +139,26 @@
 </div>
 
 {$footeroutput}
+<script type="text/javascript">
 
+  (function() {
+
+    var c = document.createElement('script');
+
+    c.type = 'text/javascript'; c.async = true;
+
+    c.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + "track.ppi.net/ChatLink.ashx?config=1&id=stlivechat0";
+
+    var s = document.getElementsByTagName('script')[0];
+
+    s.parentNode.insertBefore(c,s);
+
+  })();
+
+</script>
+<script type="text/javascript">
+fbq('track', 'ViewContent');
+</script>
+<div id="stlivechat0"></div>
 </body>
 </html>
