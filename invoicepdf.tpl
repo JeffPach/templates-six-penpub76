@@ -7,7 +7,7 @@ if (file_exists(ROOTDIR . '/assets/img/logo.png')) {
 } elseif (file_exists(ROOTDIR . '/assets/img/logo.jpg')) {
     $logoFilename = 'logo.jpg';
 }
-$pdf->Image(ROOTDIR . '/assets/img/' . $logoFilename, 15, 25, 75);
+$pdf->Image(ROOTDIR . '/assets/img/' . $logoFilename, 15, 25, 45);
 
 # Invoice Status
 $pdf->SetXY(0, 0);
