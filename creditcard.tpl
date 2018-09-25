@@ -205,7 +205,9 @@
                         </button>
                     </div>
                 </div>
-
+				<div class="cc-disclaimer">
+					<p>Your credit card will automatically be charged for future invoices. If you would like to disable automatic payment, please contact support@penpublishing.com or submit a ticket.</p>
+				</div>
             </div>
             <div class="col-md-5">
 
