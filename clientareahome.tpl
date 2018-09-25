@@ -1,3 +1,11 @@
+<div id="pin-dropdown">
+	<div class="pin-title">
+		Click Here for PIN
+	</div>
+	<div class="pin-number">
+		{$clientsdetails.customfields3}
+	</div>
+</div>
 <div class="tiles clearfix">
     <div class="row">
         <div class="col-sm-3 col-xs-6 tile" onclick="window.location='clientarea.php?action=services'">

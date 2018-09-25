@@ -199,7 +199,7 @@
                                         <strong>{$LANG.domainregisternsip}</strong>
                                     </div>
                                     <div class="col-sm-7 text-left">
-                                        {$serverdata.ipaddress}
+                                        {$serverdata.assignedips}
                                     </div>
                                 </div>
                                 {if $serverdata.nameserver1 || $serverdata.nameserver2 || $serverdata.nameserver3 || $serverdata.nameserver4 || $serverdata.nameserver5}
