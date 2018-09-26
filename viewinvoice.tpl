@@ -33,7 +33,7 @@
                 </div>
                 <div class="invoice-col text-center">
 
-                    <div class="invoice-status">
+                    <!--<div class="invoice-status">
                         {if $status eq "Draft"}
                             <span class="draft">{$LANG.invoicesdraft}</span>
                         {elseif $status eq "Unpaid"}
@@ -49,7 +49,7 @@
                         {elseif $status eq "Payment Pending"}
                             <span class="paid">{$LANG.invoicesPaymentPending}</span>
                         {/if}
-                    </div>
+                    </div>-->
 
                     {if $status eq "Unpaid" || $status eq "Draft"}
                         <div class="small-text">
