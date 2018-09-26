@@ -623,7 +623,6 @@ section#bottom-contact-banner {
         }
 
 /**************************************************** */
-
 /* Register Domain, Domain Search Bar and Results Sections
 ***************************************************** */
 
@@ -1325,6 +1324,48 @@ ul.hosting-tabs {
     border-right: 1px solid #e5e5e5;
 }*/
 
+/* Pure Comparison 75 Sidebar Edits */
+
+.btn-static-sidebar {
+    display: none;
+}
+
+.static-sidebar {
+    width: 100%;
+    max-width: 1170px;
+    left: 0 !important;
+    margin-top: 25px;
+}
+
+    .static-sidebar .product-selection-sidebar {
+        position: relative;
+        display: block !important;
+        width: 100%;
+        left: 0;
+    }
+
+    .static-sidebar .col-xs-12 {
+        width: 100%;
+    }
+
+    .static-sidebar .mobile-heading {
+        margin-bottom: 35px;
+    }
+
+    .static-sidebar .mobile-heading #headline {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #13120f;
+        text-align: left;
+        padding: 6px 0 15px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #ccc;
+    }
+
+/************************************/
+
 /* Review and Checkout
 ***************************************************** */
 
@@ -1785,6 +1826,10 @@ section#footer {
     .main-content {
         padding-top: 130px;
     }
+
+    .static-sidebar .hidden-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
@@ -1933,6 +1978,14 @@ section#footer {
     ul.hosting-tabs {
         margin-bottom: 25px !important;
     }
+
+    .static-sidebar .product-selection-sidebar {
+        width: 25%;
+    }
+
+    .static-sidebar .col-xs-12 {
+        width: 75%;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -1978,6 +2031,25 @@ section#footer {
 
     #order-standard_cart .products.full-annual .product {
         min-height: 445px;
+    }
+
+    /* Pure Comparison 75 */
+
+    .static-sidebar .col-xs-12 .price-table-container ul li {
+        width: 24%;
+    }
+
+    .static-sidebar #order-pure_comparison .price-table-container .price-table .top-head .top-area {
+        padding: 0;
+    }
+
+    .static-sidebar #order-pure_comparison .price-table-container .price-table #productDescription1,
+    .static-sidebar #order-pure_comparison .price-table-container .price-table #productDescription2 {
+        margin-top: 166px;
+    }
+
+    .static-sidebar #order-pure_comparison .price-table-container .price-table #productDescription4 {
+        margin-top: 136px;
     }
 }
 
