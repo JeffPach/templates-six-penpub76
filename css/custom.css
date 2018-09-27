@@ -297,6 +297,10 @@ section#header {
         border-radius: 0;
     }
 
+.navbar-main .dropdown-menu {
+    padding-bottom: 0;
+}
+
 section#main-menu .navbar-collapse {
     height: 380px;
     overflow-y: scroll;
