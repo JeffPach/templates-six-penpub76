@@ -36,8 +36,8 @@
                     <div class="invoice-status">
                         {if $status eq "Draft"}
                             <span class="draft">{$LANG.invoicesdraft}</span>
-                        <!--{elseif $status eq "Unpaid"}
-                            <span class="unpaid">{$LANG.invoicesunpaid}</span>-->
+                        {elseif $status eq "Unpaid"}
+                            <span class="unpaid"></span>
                         {elseif $status eq "Paid"}
                             <span class="paid">{$LANG.invoicespaid}</span>
                         {elseif $status eq "Refunded"}

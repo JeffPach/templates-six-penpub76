@@ -32,8 +32,8 @@ if ($status == 'Draft') {
     $pdf->SetFillColor(3, 3, 2);
     $pdf->SetDrawColor(127);
 } else {
-    $pdf->SetFillColor(223, 85, 74);
-    $pdf->SetDrawColor(171, 49, 43);
+    $pdf->SetFillColor(255, 255, 255);
+    $pdf->SetDrawColor(255, 255, 255);
 }
 if ($status == 'Payment Pending'){
 $pdf->Cell(100, 18, strtoupper(Lang::trans('invoices' . str_replace(' ', '', $status))), 'TB', 0, 'C', '1');
