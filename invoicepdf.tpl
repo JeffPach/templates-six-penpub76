@@ -10,7 +10,38 @@ if (file_exists(ROOTDIR . '/assets/img/logo.png')) {
 $pdf->Image(ROOTDIR . '/assets/img/' . $logoFilename, 15, 25, 45);
 
 # Invoice Status
-
+$pdf->SetXY(0, 0);
+$pdf->SetFont($pdfFont, 'B', 28);
+$pdf->SetTextColor(255);
+$pdf->SetLineWidth(0.75);
+$pdf->StartTransform();
+$pdf->Rotate(-35, 100, 225);
+if ($status == 'Draft') {
+    $pdf->SetFillColor(200);
+    $pdf->SetDrawColor(140);
+} elseif ($status == 'Paid') {
+    $pdf->SetFillColor(151, 223, 74);
+    $pdf->SetDrawColor(110, 192, 70);
+} elseif ($status == 'Cancelled') {
+    $pdf->SetFillColor(200);
+    $pdf->SetDrawColor(140);
+} elseif ($status == 'Refunded') {
+    $pdf->SetFillColor(131, 182, 218);
+    $pdf->SetDrawColor(91, 136, 182);
+} elseif ($status == 'Collections') {
+    $pdf->SetFillColor(3, 3, 2);
+    $pdf->SetDrawColor(127);
+} else {
+    $pdf->SetFillColor(223, 85, 74);
+    $pdf->SetDrawColor(171, 49, 43);
+}
+if ($status == 'Payment Pending'){
+$pdf->Cell(100, 18, strtoupper(Lang::trans('invoices' . str_replace(' ', '', $status))), 'TB', 0, 'C', '1');
+} else {
+$pdf->Cell(100, 18, strtoupper(Lang::trans('invoices' . strtolower($status))), 'TB', 0, 'C', '1');
+}
+$pdf->StopTransform();
+$pdf->SetTextColor(0);
 
 # Company Details
 $pdf->SetXY(15, 42);
